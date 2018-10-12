@@ -17,7 +17,8 @@ This work studies the design of safe control policies for large-scale non-linear
 
 ```shell
 cd <path-to-rl-agents>/scripts/
-python experiments.py benchmark configs/RoundaboutEnv/benchmark_robust_control.json --test --episodes=100 --processes=4
+python experiments.py benchmark configs/RoundaboutEnv/benchmark_robust_control.json \
+                      --test --episodes=100 --processes=4
 ```
 
 The following agents will be evaluated:
