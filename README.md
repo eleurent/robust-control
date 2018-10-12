@@ -4,7 +4,7 @@ This work studies the design of safe control policies for large-scale non-linear
 
 ## Video
 
-[![Video](https://img.youtube.com/vi/9WvO_dm8khI/0.jpg)](https://www.youtube.com/watch?v=9WvO_dm8khI)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9WvO_dm8khI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Reproduce the experiments
 
