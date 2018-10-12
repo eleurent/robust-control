@@ -8,4 +8,30 @@ This work studies the design of safe control policies for large-scale non-linear
 
 ## Reproduce the experiments
 
-Coming soon.
+### Install requirements
+
+* The environment: [highway-env](https://github.com/eleurent/highway-env)
+* The agents: [rl-agents](https://github.com/eleurent/rl-agents)
+
+### Run the benchmark
+
+```shell
+cd <path-to-rl-agents>/scripts/
+python experiments.py benchmark configs/RoundaboutEnv/benchmark_robust_control.json --test --episodes=100 --processes=4
+```
+
+The following agents will be evaluated:
+```json
+{
+    "environments": [
+        "configs/RoundaboutEnv/env.json"
+    ],
+    "agents": [
+        "configs/RoundaboutEnv/agents/DeterministicPlannerAgent/baseline.json",
+        "configs/RoundaboutEnv/agents/DeterministicPlannerAgent/assume_random_route.json",
+        "configs/RoundaboutEnv/agents/DiscreteRobustPlannerAgent/routes.json",
+        "configs/RoundaboutEnv/agents/DeterministicPlannerAgent/assume_random_behaviour.json",
+        "configs/RoundaboutEnv/agents/IntervalRobustPlannerAgent/behaviours.json"
+    ]
+}
+```
