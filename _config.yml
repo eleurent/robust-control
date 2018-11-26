@@ -3,4 +3,5 @@ title: Approximate Robust Control of Uncertain Dynamical Systems
 description: Edouard Leurent, Yann Blanco, Denis Efimov, Odalric-Ambrym Maillard
 
 github:
+  paper_url: https://hal.archives-ouvertes.fr/hal-01931744
   repository_url: http://github.com/eleurent/rl-agents
